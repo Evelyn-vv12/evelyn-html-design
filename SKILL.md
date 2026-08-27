@@ -4,7 +4,7 @@ description: Apply Evelyn's personal visual design system to HTML reports, dashb
 license: private
 metadata:
   owner: Evelyn
-  version: "1.0.0"
+  version: "1.1.0"
 ---
 
 # Evelyn HTML Design
@@ -45,6 +45,7 @@ Before producing final HTML, use:
 - `references/typography.md` — Chinese/English fonts, type scale, line height, bilingual rules.
 - `references/layout-rules.md` — spacing, density, responsive behavior, hero and page layout.
 - `references/components.md` — cards, buttons, badges, tables, charts, interactions.
+- `references/illustration-system.md` — Evelyn's canonical character system, supporting dog, placement logic, and illustration do/don't rules.
 - `assets/theme.css` — reusable CSS variables and base styling.
 
 Use `assets/preview.html` as a compact style reference.
@@ -106,6 +107,44 @@ For short personal notes, quotes, captions, or signature-like text:
 `"LXGW WenKai", "Noto Serif SC", "KaiTi", serif`
 
 Never use this for long body copy, dense reports, or tables.
+
+## Presentation mode
+
+When HTML is used as a presentation or report deck, default to **PPT-style slides** rather than a long webpage.
+
+- default canvas: **16:9**
+- canonical working size: **1920×1080**
+- one slide = one fixed presentation frame
+- do not default to long-scroll layouts for presentation work
+- each slide should have one dominant message and a clear visual hierarchy
+- characters and doodles must participate in the composition, not sit as detached decoration
+
+See `references/layout-rules.md` and `references/illustration-system.md`.
+
+## Canonical character system
+
+The default main character is Evelyn's **simple curly-haired girl line-art character**.
+
+Canonical traits:
+- short-to-medium curly blonde bob
+- simple cute line-art face; expressive but not oversized glossy "Powerpuff" eyes
+- clean, light sketch treatment with minimal fill and minimal shading
+- pleated skirt
+- elegant high heels
+- coordinated fitted short-sleeve blouse / top, tucked in
+- feminine, smart, light, and presentation-friendly
+- no heavy solid black clothing blocks
+- no bow-covered shoes / chunky cartoon boots
+- no realistic rendering
+
+The character is a **layout actor**, not a sticker:
+- lean on typography
+- touch or point to a keyword, number, chart, or process step
+- sit or stand on a baseline
+- bridge two information areas
+- visually anchor a conclusion
+
+The small fluffy dog is a supporting character and should usually sit near the base of a composition, closing whitespace or supporting a warm / playful moment.
 
 ## Visual rules
 
@@ -195,3 +234,6 @@ Before delivery verify:
 7. The page feels soft, modern, refined, and personal — not childish or neon.
 8. Mobile layout has no horizontal overflow except intentional scrollable tables.
 9. Repeated preferences belong in this skill; one-off requests do not.
+10. Presentation HTML defaults to 16:9 / 1920×1080 unless the task explicitly requires another ratio.
+11. The main character must feel integrated with the message or layout; avoid detached corner placement.
+12. The canonical girl retains the approved short curly hair + pleated skirt + high heels + light blouse styling unless a task explicitly calls for another outfit.
