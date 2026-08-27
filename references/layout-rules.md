@@ -100,3 +100,67 @@ For work reports:
 - prefer compact cards
 - use color only where it improves scanning
 - do not decorate every section equally
+
+
+## Presentation / PPT mode
+
+When HTML is intended to be used like a PPT, presentation, pitch deck, internal review, or slide-style report, use this mode by default.
+
+### Canvas
+
+Canonical presentation canvas:
+- aspect ratio: **16:9**
+- working size: **1920×1080px**
+- one HTML slide should map cleanly to one presentation frame
+- no vertical scrolling inside a slide
+- preserve generous edge margins and safe areas for projection / screen sharing
+
+For browser preview, scale the 1920×1080 canvas responsively while preserving aspect ratio.
+
+### Slide logic
+
+Each slide should:
+- communicate one dominant idea
+- use a strong assertion-style headline when appropriate
+- keep content density closer to PPT than dashboard/webpage density
+- use whitespace intentionally
+- avoid unrelated card grids when a simpler visual narrative works
+- avoid turning the slide into a generic website hero with detached decoration
+
+### Character integration
+
+The canonical main girl is not a bottom-corner ornament.
+
+Use her as part of the composition:
+- leaning on or touching large type
+- pointing to a key number, chart, or label
+- standing on a baseline or beside a process step
+- bridging headline and evidence
+- anchoring a conclusion or transition
+
+The role should have a clear visual reason to exist on the slide.
+
+Supporting characters, especially the small dog, may:
+- close negative space
+- anchor the bottom of a type block
+- support warm / playful / seasonal moments
+- reinforce a transition or conclusion
+
+Avoid:
+- large character panel on the right with no relationship to the message
+- character dropped into the bottom-right only as decoration
+- multiple large characters competing on one slide
+- decorative stickers that do not support hierarchy or narrative
+
+### Default slide composition
+
+A strong default cover / title composition may use:
+- small eyebrow / context label at top left
+- page number or section marker at top right
+- oversized stacked headline occupying 45–60% of the frame
+- canonical line-art girl physically interacting with the headline
+- small dog near the baseline as a secondary anchor
+- one short supporting sentence below or beside the title
+- no more than 1–3 tiny doodle accents
+
+This is a starting pattern, not a mandatory template.
