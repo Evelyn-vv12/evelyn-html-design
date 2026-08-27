@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evelyn HTML Design Preview</title>
+<link rel="stylesheet" href="./theme.css">
+<style>
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 48px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: -70px;
+  top: -90px;
+  border-radius: 50%;
+  background: var(--eve-gradient);
+  filter: blur(60px);
+  opacity: .36;
+}
+.hero > * { position: relative; z-index: 1; }
+.hero p { max-width: 720px; opacity: .74; }
+.section { margin-top: 18px; }
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-top: 18px;
+}
+.swatch { min-height: 76px; border-radius: 14px; border: 1px solid var(--eve-border); }
+.serif { font-family: var(--eve-font-serif); font-size: 30px; line-height: 1.25; }
+@media (max-width:768px) {
+  .hero { padding: 28px 22px; }
+  .swatches { grid-template-columns: repeat(4, 1fr); }
+}
+</style>
+</head>
+<body>
+<main class="eve-page">
+  <section class="eve-card hero">
+    <div class="eyebrow">EVELYN / HTML DESIGN</div>
+    <h1>柔和，但不甜腻。<br>Soft, modern, and readable.</h1>
+    <p>粉色负责温度，紫蓝色负责平衡，深梅色负责信息层级。用于工作汇报时，重点始终是让内容更快被看懂。</p>
+  </section>
+
+  <section class="eve-grid eve-grid--3 section">
+    <article class="eve-card eve-card--pink">
+      <div class="eyebrow">WARM</div>
+      <h3>Blush highlight</h3>
+      <p>适合重点结论、提示和少量强调。</p>
+    </article>
+    <article class="eve-card eve-card--lavender">
+      <div class="eyebrow">CALM</div>
+      <h3>Lavender surface</h3>
+      <p>适合次级信息区和解释性内容。</p>
+    </article>
+    <article class="eve-card eve-card--periwinkle">
+      <div class="eyebrow">COOL</div>
+      <h3>Periwinkle anchor</h3>
+      <p>适合数据、图表和交互状态。</p>
+    </article>
+  </section>
+
+  <section class="eve-card section">
+    <div class="eyebrow">PALETTE</div>
+    <div class="swatches">
+      <div class="swatch" style="background:#7C88BB"></div>
+      <div class="swatch" style="background:#E79798"></div>
+      <div class="swatch" style="background:#E2B9BD"></div>
+      <div class="swatch" style="background:#B7728C"></div>
+      <div class="swatch" style="background:#BDAABF"></div>
+      <div class="swatch" style="background:#3C2C40"></div>
+      <div class="swatch" style="background:#1B1117"></div>
+    </div>
+  </section>
+
+  <section class="eve-grid eve-grid--2 section">
+    <article class="eve-card">
+      <div class="eyebrow">DEFAULT TYPE</div>
+      <h2>Manrope × Noto Sans SC</h2>
+      <p>默认用于数据分析、工作汇报、Dashboard 和运营页面。</p>
+    </article>
+    <article class="eve-card">
+      <div class="eyebrow">EDITORIAL TYPE</div>
+      <p class="serif">A softer point of view.</p>
+      <p>短标题可用 Cormorant Garamond × Noto Serif SC，正文仍使用无衬线字体。</p>
+    </article>
+  </section>
+</main>
+</body>
+</html>
