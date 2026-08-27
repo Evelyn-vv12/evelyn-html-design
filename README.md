@@ -48,7 +48,8 @@ Default body typography:
 │   ├── color-system.md
 │   ├── typography.md
 │   ├── layout-rules.md
-│   └── components.md
+│   ├── components.md
+│   └── illustration-system.md
 └── examples/
     ├── report.html
     └── dashboard.html
@@ -72,6 +73,10 @@ evelyn-html-design
 
 If the user explicitly requests a different visual style for a specific artifact, that request overrides this skill for that artifact.
 
+## Presentation default
+
+For HTML used as a deck or report presentation, the default is **16:9 / 1920×1080**, one slide per frame. The canonical main character is the simple curly-haired blonde line-art girl, used as a compositional actor rather than a detached mascot. See `references/illustration-system.md`.
+
 ## Maintenance rule
 
 This repository should be updated whenever Evelyn confirms a recurring preference about:
@@ -85,5 +90,7 @@ This repository should be updated whenever Evelyn confirms a recurring preferenc
 - responsive behavior
 - interaction
 - visual do / don't rules
+- presentation / PPT slide behavior
+- recurring character / illustration rules
 
 One-off visual requests should not automatically become permanent rules.
