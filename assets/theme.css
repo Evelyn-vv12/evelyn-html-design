@@ -1,0 +1,198 @@
+:root {
+  --eve-canvas: #F8F6FA;
+  --eve-card: #FFFFFF;
+  --eve-ink: #1B1117;
+  --eve-plum: #3C2C40;
+  --eve-periwinkle: #7C88BB;
+  --eve-blush: #E79798;
+  --eve-petal: #E2B9BD;
+  --eve-mauve: #B7728C;
+  --eve-lavender: #BDAABF;
+
+  --eve-pink-wash: #FBF2F5;
+  --eve-lavender-wash: #F2F1F8;
+  --eve-periwinkle-wash: #EEF0F8;
+  --eve-plum-wash: #F4EFF4;
+
+  --eve-border: rgba(60, 44, 64, 0.10);
+  --eve-shadow: 0 18px 52px rgba(60, 44, 64, 0.08);
+
+  --eve-radius-sm: 12px;
+  --eve-radius-md: 16px;
+  --eve-radius-lg: 20px;
+
+  --eve-font-sans: Manrope, Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", "Source Han Sans SC", ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --eve-font-serif: "Cormorant Garamond", "Noto Serif SC", "Songti SC", Georgia, "Times New Roman", serif;
+  --eve-font-personal: "LXGW WenKai", "Noto Serif SC", "KaiTi", serif;
+
+  --eve-gradient: linear-gradient(135deg, #E7AFB7 0%, #C4B2CC 48%, #8793C4 100%);
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  color: var(--eve-ink);
+  background:
+    radial-gradient(circle at 18% 8%, rgba(231, 151, 152, 0.13), transparent 28%),
+    radial-gradient(circle at 86% 10%, rgba(124, 136, 187, 0.16), transparent 32%),
+    var(--eve-canvas);
+  font-family: var(--eve-font-sans);
+  font-size: 16px;
+  line-height: 1.68;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3 {
+  color: var(--eve-plum);
+  text-wrap: balance;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 64px);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+h2 {
+  font-size: clamp(24px, 3vw, 38px);
+  line-height: 1.14;
+  letter-spacing: -0.025em;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0 0 0.9em; }
+
+a { color: var(--eve-plum); }
+
+.eyebrow {
+  color: var(--eve-mauve);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.eve-page {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 56px 0 80px;
+}
+
+.eve-card {
+  background: var(--eve-card);
+  border: 1px solid var(--eve-border);
+  border-radius: var(--eve-radius-lg);
+  box-shadow: var(--eve-shadow);
+  padding: 24px;
+}
+
+.eve-card--pink { background: var(--eve-pink-wash); }
+.eve-card--lavender { background: var(--eve-lavender-wash); }
+.eve-card--periwinkle { background: var(--eve-periwinkle-wash); }
+.eve-card--plum { background: var(--eve-plum-wash); }
+
+.eve-gradient {
+  background: var(--eve-gradient);
+  color: #fff;
+}
+
+.eve-editorial-title {
+  font-family: var(--eve-font-serif);
+  font-weight: 500;
+}
+
+.eve-personal-accent {
+  font-family: var(--eve-font-personal);
+}
+
+.eve-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 18px;
+  border-radius: 13px;
+  border: 1px solid transparent;
+  background: var(--eve-plum);
+  color: #fff;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 180ms ease, box-shadow 180ms ease, opacity 180ms ease;
+}
+
+.eve-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 28px rgba(60, 44, 64, 0.18);
+}
+
+.eve-button:focus-visible,
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 3px solid rgba(124, 136, 187, 0.40);
+  outline-offset: 3px;
+}
+
+.metric {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.03em;
+}
+
+.eve-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.eve-grid--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.eve-grid--3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.eve-grid--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --eve-canvas: #171219;
+    --eve-card: #211923;
+    --eve-ink: #F6EEF5;
+    --eve-plum: #F3DDE8;
+    --eve-periwinkle: #A9B3E1;
+    --eve-blush: #E5A1B2;
+    --eve-border: rgba(242, 223, 235, 0.10);
+    --eve-shadow: 0 18px 52px rgba(0, 0, 0, 0.20);
+    --eve-pink-wash: #2A1E25;
+    --eve-lavender-wash: #25202C;
+    --eve-periwinkle-wash: #202332;
+    --eve-plum-wash: #271F29;
+  }
+}
+
+@media (max-width: 768px) {
+  body { font-size: 15.5px; }
+  .eve-page {
+    width: min(100% - 36px, 1120px);
+    padding: 28px 0 56px;
+  }
+  .eve-card { padding: 19px; border-radius: 18px; }
+  .eve-grid--2,
+  .eve-grid--3,
+  .eve-grid--4 { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
