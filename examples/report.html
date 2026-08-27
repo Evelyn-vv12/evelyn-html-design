@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Evelyn Report Example</title>
+<link rel="stylesheet" href="../assets/theme.css">
+<style>
+.hero { padding: 42px; }
+.kicker { max-width: 720px; margin-top: 14px; opacity: .72; }
+.metrics { margin-top: 18px; }
+.metric-card strong { display:block; font-size: clamp(30px,4vw,48px); color:var(--eve-plum); }
+.metric-card span { font-size:13px; opacity:.64; }
+.section { margin-top: 28px; }
+.split { display:grid; grid-template-columns:1.2fr .8fr; gap:18px; }
+.bar { height:10px; background:#EDE7EE; border-radius:999px; overflow:hidden; }
+.bar > span { display:block; height:100%; background:var(--eve-gradient); border-radius:inherit; }
+.list { display:grid; gap:12px; margin-top:14px; }
+.item { padding:14px 0; border-top:1px solid var(--eve-border); }
+@media(max-width:768px){ .hero{padding:26px 22px}.split{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<main class="eve-page">
+  <section class="eve-card hero">
+    <div class="eyebrow">WEEKLY REVIEW / EXAMPLE</div>
+    <h1>先看结果，再解释原因。</h1>
+    <p class="kicker">这是报告型 HTML 的参考：视觉有个人风格，但信息结构仍然优先服务于判断、问题和下一步行动。</p>
+  </section>
+
+  <section class="eve-grid eve-grid--4 metrics">
+    <article class="eve-card metric-card"><strong class="metric">£42.8k</strong><span>Revenue</span></article>
+    <article class="eve-card metric-card eve-card--pink"><strong class="metric">2.41%</strong><span>Conversion</span></article>
+    <article class="eve-card metric-card"><strong class="metric">£168</strong><span>AOV</span></article>
+    <article class="eve-card metric-card eve-card--periwinkle"><strong class="metric">+12.6%</strong><span>Traffic WoW</span></article>
+  </section>
+
+  <section class="split section">
+    <article class="eve-card">
+      <div class="eyebrow">CORE FINDING</div>
+      <h2>流量增加，但承接效率没有同步提升。</h2>
+      <p>因此下一阶段优先级不是继续放大流量，而是修复高流量商品与关键落地页的转化承接。</p>
+      <div class="list">
+        <div class="item"><strong>Priority 01</strong><br>检查 Top SKU 的主图、价格信息与信任要素。</div>
+        <div class="item"><strong>Priority 02</strong><br>拆分移动端与桌面端的转化表现。</div>
+        <div class="item"><strong>Priority 03</strong><br>确认促销流量是否进入低意向页面。</div>
+      </div>
+    </article>
+
+    <article class="eve-card eve-card--lavender">
+      <div class="eyebrow">PROGRESS</div>
+      <h3>Current focus</h3>
+      <p>Top SKU PDP optimization</p>
+      <div class="bar"><span style="width:72%"></span></div>
+      <p style="margin-top:18px">Mobile UX review</p>
+      <div class="bar"><span style="width:48%"></span></div>
+      <p style="margin-top:18px">Promo landing cleanup</p>
+      <div class="bar"><span style="width:35%"></span></div>
+    </article>
+  </section>
+</main>
+</body>
+</html>
