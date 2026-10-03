@@ -142,3 +142,19 @@ Don't:
 - use huge glossy cartoon eyes
 - separate the character into a decorative right-side panel by default
 - place the character in a corner simply because there is empty space
+
+## Asset paths / 角色资源路径
+
+Canonical illustration files live under `assets/illustrations/`. Always reference them by these exact paths. Full role and usage metadata for each character is in `assets/illustrations/manifest.json`.
+
+Primary character:
+`assets/illustrations/girl-curly-line/girl-curly-line.png`
+
+Featured character:
+`assets/illustrations/girl-curly-featured/girl-curly-featured.png`
+
+Supporting dog:
+`assets/illustrations/dog-supporting/dog-supporting.png`
+
+Optional playful character:
+`assets/illustrations/girl-chibi-optional/girl-chibi-optional.jpg`
