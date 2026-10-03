@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "characters": [
+    {
+      "id": "girl-curly-line",
+      "role": "primary",
+      "file": "assets/illustrations/girl-curly-line/girl-curly-line.png",
+      "usage": "default main character for presentation HTML, integrated with typography and layout"
+    },
+    {
+      "id": "girl-curly-featured",
+      "role": "featured",
+      "file": "assets/illustrations/girl-curly-featured/girl-curly-featured.png",
+      "usage": "featured cover / hero visual when stronger illustration is needed"
+    },
+    {
+      "id": "dog-supporting",
+      "role": "supporting-emotion",
+      "file": "assets/illustrations/dog-supporting/dog-supporting.png",
+      "usage": "supporting warm anchor, usually near baseline or in conclusion / seasonal slides"
+    },
+    {
+      "id": "girl-chibi-optional",
+      "role": "optional-playful",
+      "file": "assets/illustrations/girl-chibi-optional/girl-chibi-optional.jpg",
+      "usage": "optional playful character for lighter scenes; not the default main character"
+    }
+  ]
+}
